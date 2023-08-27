@@ -234,6 +234,9 @@
 .home_sci a:hover::before{
     width: 100%;
 }
+img{
+    height: 60%;
+}
 .lottie{
     margin-top: 5%;
     height: 80vh;

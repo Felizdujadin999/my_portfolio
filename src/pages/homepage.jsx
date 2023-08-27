@@ -2,8 +2,16 @@ import React from "react";
 import '../styles/homepage.css';
 import Lottie from 'lottie-react'
 import Lion from '../assets/image/LION.json';
+import { useNavigate } from "react-router-dom";
+import twitter from '../assets/image/twitter.svg';
+import instagram from '../assets/image/instagram.svg';
+import github from '../assets/image/github.svg';
 
 function Homepage(){
+    const navigate = useNavigate();
+    const move = () => {
+        navigate("/projectpage")
+      }
 
     return(
         <div className="main_">
@@ -14,10 +22,8 @@ function Homepage(){
                     <a href="#" className="active">HOME</a>
 
                     <a href="#">ABOUT</a>
-
-                    <a href="#">CONTACT</a>
                     
-                    <a href="#">PROJECT</a>  
+                    <a href="#" onClick={move}>PROJECT</a>  
                 </nav>
             </header>
 
@@ -28,14 +34,14 @@ function Homepage(){
                     <p></p>
                     <div className="btn-box">
                         <a href="#">HIRE ME</a>
-                        <a href="#">LET'S TALK</a>
+                        <a href="https://wa.me/2347047670124">LET'S TALK</a>
                     </div>
                 </div>
 
                 <div className="home_sci">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
+                    <a href="#"><img src={twitter}/></a>
+                    <a href="#"><img src={instagram}/></a>
+                    <a href="https://github.com/Felizdujadin999"><img src={github}/></a>
                 </div>
 
                 <div className="home_imgHover"><Lottie animationData={Lion} className="lottie"/></div>
