@@ -28,7 +28,7 @@
 }
 
 .header_{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -87,7 +87,7 @@
 .home_content h3{
     position: relative;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 800;
     color: #00abf0;
 }
 .home_content h3::before{
@@ -255,4 +255,10 @@ img{
         width: 0;
     
     }   
+}
+
+
+
+@media (max-width: 1200px) {
+    
 }
